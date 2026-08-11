@@ -1,0 +1,220 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+
+    background: var(--navbar);
+    border-bottom: 1px solid var(--border);
+
+    position: relative;
+    z-index: 10;
+}
+
+/* Main Navbar Container */
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    min-height: 78px;
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar-logo {
+    color: var(--text);
+
+    text-decoration: none;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+
+    margin-left: auto;
+}
+
+.navbar-links a {
+    color: var(--text-secondary);
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    transition: 0.2s;
+}
+
+.navbar-links a:hover {
+    color: #2864df;
+}
+
+/* =========================================
+   THEME CONTROL
+========================================= */
+
+.theme-control {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-left: 30px;
+}
+
+.theme-label {
+    color: var(--text);
+
+    font-size: 15px;
+    font-weight: 600;
+
+    min-width: 42px;
+}
+
+/* =========================================
+   TOGGLE SWITCH
+========================================= */
+
+.theme-switch {
+    position: relative;
+
+    display: inline-block;
+
+    width: 52px;
+    height: 28px;
+
+    flex-shrink: 0;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider */
+
+.theme-slider {
+    position: absolute;
+
+    cursor: pointer;
+
+    inset: 0;
+
+    background: #c8d0dc;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+/* Toggle Circle */
+
+.theme-slider::before {
+    content: "";
+
+    position: absolute;
+
+    width: 22px;
+    height: 22px;
+
+    left: 3px;
+    top: 3px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    transition: 0.3s;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode */
+
+.theme-switch input:checked + .theme-slider {
+    background: #2864df;
+}
+
+.theme-switch input:checked + .theme-slider::before {
+    transform: translateX(24px);
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .navbar-container {
+        min-height: auto;
+
+        padding: 18px 20px;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .navbar-logo {
+        font-size: 24px;
+    }
+
+    .navbar-links {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        margin-left: 0;
+
+        gap: 25px;
+    }
+
+    .theme-control {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .navbar-container {
+        padding: 15px;
+    }
+
+    .navbar-logo {
+        font-size: 22px;
+    }
+
+    .navbar-links {
+        gap: 18px;
+    }
+
+    .navbar-links a {
+        font-size: 15px;
+    }
+
+    .theme-label {
+        display: none;
+    }
+}

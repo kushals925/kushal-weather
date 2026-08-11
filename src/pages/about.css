@@ -1,0 +1,595 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page {
+    min-height: 100vh;
+    padding: 70px 20px 90px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.about-hero {
+    max-width: 850px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.about-badge {
+    display: inline-block;
+
+    margin-bottom: 25px;
+    padding: 8px 16px;
+
+    background: var(--secondary-card);
+    color: var(--text);
+
+    border: 1px solid var(--border);
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.about-small-title {
+    margin: 0 0 12px;
+
+    color: #4f8df7;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.about-hero h1 {
+    margin: 0 auto 20px;
+
+    color: var(--text);
+
+    font-size: 58px;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+.about-hero h1 span {
+    color: #4f8df7;
+}
+
+.about-description {
+    max-width: 720px;
+    margin: 0 auto;
+
+    color: var(--text-secondary);
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   MAIN CARDS
+========================================= */
+
+.about-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.about-card {
+    position: relative;
+
+    padding: 32px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(79, 141, 247, 0.45);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    background: var(--secondary-card);
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    font-size: 25px;
+}
+
+.card-label {
+    margin: 0 0 8px;
+
+    color: #4f8df7 !important;
+
+    font-size: 12px !important;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.about-card h2 {
+    margin: 0 0 15px;
+
+    color: var(--text);
+
+    font-size: 25px;
+
+    text-align: left;
+}
+
+.about-card p {
+    margin: 0;
+
+    color: var(--text-secondary);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.feature-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px 20px;
+
+    margin: 20px 0 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.feature-list li {
+    position: relative;
+
+    padding-left: 20px;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.feature-list li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+
+    color: #4f8df7;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   TECHNOLOGY SECTION
+========================================= */
+
+.technology-section {
+    max-width: 1050px;
+    margin: 85px auto 0;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 35px;
+
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 8px 0 12px;
+
+    color: var(--text);
+
+    font-size: 34px;
+}
+
+.section-heading p:last-child {
+    margin: 0;
+
+    color: var(--text-secondary);
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   TECHNOLOGY GRID
+========================================= */
+
+.technology-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.technology-item {
+    padding: 22px 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.technology-item:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(79, 141, 247, 0.5);
+}
+
+.technology-icon {
+    margin-bottom: 10px;
+
+    font-size: 28px;
+}
+
+.technology-item strong {
+    color: var(--text);
+
+    font-size: 14px;
+}
+
+.technology-item small {
+    margin-top: 5px;
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   WHY WEATHER NOW
+========================================= */
+
+.why-section {
+    position: relative;
+
+    max-width: 1050px;
+    min-height: 300px;
+
+    margin: 80px auto 0;
+    padding: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(79, 141, 247, 0.14),
+            var(--card)
+        );
+
+    border: 1px solid var(--border);
+    border-radius: 24px;
+}
+
+.why-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 600px;
+}
+
+.why-content h2 {
+    margin: 8px 0 15px;
+
+    color: var(--text);
+
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.why-content > p {
+    margin: 0;
+
+    color: var(--text-secondary);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   EXPLORE BUTTON
+========================================= */
+
+.explore-button {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 12px 22px;
+
+    background: #2864df;
+    color: #ffffff;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.explore-button:hover {
+    background: #1e52bd;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(40, 100, 223, 0.3);
+}
+
+
+/* =========================================
+   WEATHER VISUAL
+========================================= */
+
+.weather-visual {
+    position: absolute;
+
+    right: 50px;
+    top: 20px;
+
+    width: 280px;
+    height: 280px;
+}
+
+.visual-sun {
+    position: absolute;
+
+    top: 25px;
+    right: 20px;
+
+    width: 130px;
+    height: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 210, 80, 0.12);
+
+    box-shadow:
+        0 0 45px rgba(255, 210, 80, 0.2),
+        0 0 90px rgba(255, 210, 80, 0.12);
+
+    font-size: 70px;
+
+    animation: aboutSun 4s ease-in-out infinite;
+}
+
+.visual-cloud {
+    position: absolute;
+
+    font-size: 65px;
+
+    opacity: 0.7;
+}
+
+.cloud-a {
+    bottom: 45px;
+    left: 20px;
+
+    animation: cloudFloat 5s ease-in-out infinite;
+}
+
+.cloud-b {
+    bottom: 80px;
+    right: 10px;
+
+    font-size: 45px;
+
+    animation: cloudFloat 6s ease-in-out infinite reverse;
+}
+
+@keyframes aboutSun {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.07);
+    }
+}
+
+@keyframes cloudFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .technology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .weather-visual {
+        opacity: 0.35;
+        right: 10px;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    .about-page {
+        padding: 55px 18px 70px;
+    }
+
+    .about-hero {
+        margin-bottom: 45px;
+    }
+
+    .about-hero h1 {
+        font-size: 42px;
+    }
+
+    .about-description {
+        font-size: 16px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-section {
+        padding: 35px;
+
+        min-height: 360px;
+    }
+
+    .why-content {
+        max-width: 100%;
+    }
+
+    .why-content h2 {
+        font-size: 32px;
+    }
+
+    .weather-visual {
+        right: -50px;
+        top: 80px;
+
+        opacity: 0.15;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .about-page {
+        padding: 45px 15px 60px;
+    }
+
+    .about-hero h1 {
+        font-size: 34px;
+    }
+
+    .about-description {
+        font-size: 15px;
+    }
+
+    .about-card {
+        padding: 24px;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+
+    .technology-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .technology-item {
+        padding: 18px 10px;
+    }
+
+    .why-section {
+        padding: 28px;
+
+        min-height: 330px;
+    }
+
+    .why-content h2 {
+        font-size: 28px;
+    }
+
+    .weather-visual {
+        right: -80px;
+        top: 110px;
+    }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-card,
+    .technology-item,
+    .explore-button,
+    .visual-sun,
+    .visual-cloud {
+        transition: none;
+        animation: none;
+    }
+}

@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+.app {
+    min-height: 100vh;
+
+    background: var(--background);
+
+    color: var(--text);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+/* Dark Theme */
+
+.app.dark {
+    --background: #11141a;
+    --navbar: #151820;
+
+    --text: #f5f7fa;
+    --text-secondary: #aeb7c5;
+    --text-muted: #7f8998;
+
+    --card: #1a1f29;
+    --secondary-card: #202631;
+
+    --border: #303744;
+}
+
+/* Light Theme */
+
+.app.light {
+    --background: #eef4fa;
+    --navbar: #ffffff;
+
+    --text: #1f2937;
+    --text-secondary: #536273;
+    --text-muted: #718096;
+
+    --card: #ffffff;
+    --secondary-card: #f5f8fc;
+
+    --border: #d7e0ea;
+}
